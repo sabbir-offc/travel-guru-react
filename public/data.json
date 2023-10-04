@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Cozy Downtown Apartment",
+    "detail": "Perfect for 2 guests, 1 bedroom, 1 bed, 1 bath",
+    "feature": "Free Wi-Fi, Air Conditioning, Fully Equipped Kitchen",
+    "order_cancellation": "Cancellation flexibility available",
+    "rating": 4.5,
+    "reviews": 20,
+    "price": "$69/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 2,
+    "title": "Luxury Beachfront Villa",
+    "detail": "Ideal for 8 guests, 4 bedrooms, 4 beds, 4 baths",
+    "feature": "Private Pool, Ocean View, BBQ Grill",
+    "order_cancellation": "Flexible cancellation policy",
+    "rating": 4.8,
+    "reviews": 25,
+    "price": "$299/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 3,
+    "title": "Mountain Cabin Retreat",
+    "detail": "Great for 6 guests, 3 bedrooms, 3 beds, 2.5 baths",
+    "feature": "Fireplace, Hiking Trails Nearby, Scenic Views",
+    "order_cancellation": "Free cancellation within 48 hours",
+    "rating": 4.3,
+    "reviews": 18,
+    "price": "$129/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 4,
+    "title": "Urban Loft in Historic District",
+    "detail": "Suitable for 4 guests, 2 bedrooms, 2 beds, 1 bath",
+    "feature": "Exposed Brick, Walkable Location, Modern Decor",
+    "order_cancellation": "Moderate cancellation policy",
+    "rating": 4.7,
+    "reviews": 22,
+    "price": "$89/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 5,
+    "title": "Seaside Cottage Getaway",
+    "detail": "Perfect for 3 guests, 1 bedroom, 1 bed, 1 bath",
+    "feature": "Beach Access, Sun Deck, Coastal Views",
+    "order_cancellation": "Flexible cancellation policy",
+    "rating": 4.6,
+    "reviews": 16,
+    "price": "$79/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 6,
+    "title": "Rustic Farmhouse Retreat",
+    "detail": "Ideal for 10 guests, 5 bedrooms, 5 beds, 3 baths",
+    "feature": "Farm Animals, Large Yard, Bonfire Pit",
+    "order_cancellation": "Free cancellation within 24 hours",
+    "rating": 4.4,
+    "reviews": 30,
+    "price": "$199/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 7,
+    "title": "Downtown Penthouse Suite",
+    "detail": "Great for 2 guests, 1 bedroom, 1 bed, 1 bath",
+    "feature": "City Views, Rooftop Pool, Central Location",
+    "order_cancellation": "Moderate cancellation policy",
+    "rating": 4.9,
+    "reviews": 28,
+    "price": "$129/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 8,
+    "title": "Lakefront Cabin Escape",
+    "detail": "Suitable for 5 guests, 2 bedrooms, 2 beds, 1.5 baths",
+    "feature": "Boating, Fishing, Lakeside Deck",
+    "order_cancellation": "Cancellation flexibility available",
+    "rating": 4.7,
+    "reviews": 19,
+    "price": "$149/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 9,
+    "title": "Charming Vineyard Cottage",
+    "detail": "Perfect for 4 guests, 2 bedrooms, 2 beds, 1 bath",
+    "feature": "Wine Tasting, Vineyard Views, Outdoor Dining",
+    "order_cancellation": "Free cancellation within 48 hours",
+    "rating": 4.5,
+    "reviews": 24,
+    "price": "$109/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 10,
+    "title": "Ski Chalet in the Mountains",
+    "detail": "Ideal for 6 guests, 3 bedrooms, 3 beds, 2 baths",
+    "feature": "Ski-in/Ski-out, Fireplace, Hot Tub",
+    "order_cancellation": "Flexible cancellation policy",
+    "rating": 4.8,
+    "reviews": 27,
+    "price": "$199/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 11,
+    "title": "Modern City Apartment",
+    "detail": "Great for 2 guests, 1 bedroom, 1 bed, 1 bath",
+    "feature": "Urban Living, Public Transit Access, Gym",
+    "order_cancellation": "Moderate cancellation policy",
+    "rating": 4.6,
+    "reviews": 21,
+    "price": "$89/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 12,
+    "title": "Island Paradise Villa",
+    "detail": "Suitable for 8 guests, 4 bedrooms, 4 beds, 3 baths",
+    "feature": "Beachfront, Private Pool, Tropical Gardens",
+    "order_cancellation": "Cancellation flexibility available",
+    "rating": 4.9,
+    "reviews": 32,
+    "price": "$249/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 13,
+    "title": "Historic Townhouse Getaway",
+    "detail": "Perfect for 4 guests, 2 bedrooms, 2 beds, 1 bath",
+    "feature": "Antique Furnishings, Courtyard Garden, Old World Charm",
+    "order_cancellation": "Free cancellation within 24 hours",
+    "rating": 4.7,
+    "reviews": 23,
+    "price": "$119/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 14,
+    "title": "Countryside Log Cabin Retreat",
+    "detail": "Ideal for 6 guests, 3 bedrooms, 3 beds, 2 baths",
+    "feature": "Woodland Setting, Campfire Pit, Scenic Trails",
+    "order_cancellation": "Flexible cancellation policy",
+    "rating": 4.5,
+    "reviews": 26,
+    "price": "$159/night",
+    "total": "$167 total"
+  },
+  {
+    "id": 15,
+    "title": "Art Deco Studio in the Heart of the City",
+    "detail": "Great for 2 guests, Studio, 1 bed, 1 bath",
+    "feature": "Historic Building, Art Galleries, Cafes",
+    "order_cancellation": "Moderate cancellation policy",
+    "rating": 4.6,
+    "reviews": 20,
+    "price": "$99/night",
+    "total": "$167 total"
+  }
+]
