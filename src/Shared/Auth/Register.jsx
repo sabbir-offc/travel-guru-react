@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../Pages/Navbar/Navbar";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 const Register = () => {
-  const { googleSign } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const { googleSign, createUser } = useContext(AuthContext);
   const handleSign = (media) => {
     media()
       .then((res) => {
         const loggedUser = res.user;
         toast.success("Sign in successfull.");
+        navigate("/");
         console.log(loggedUser);
       })
       .catch((err) => {
@@ -18,11 +20,31 @@ const Register = () => {
         console.log(err);
       });
   };
+  const handleCreateUser = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(email, password);
+    createUser(email, password)
+      .then((res) => {
+        toast.success("Account Created Successfully.");
+        navigate("/");
+        console.log(res.user);
+      })
+      .catch((err) => {
+        toast.error("Account create failed.");
+        console.log(err);
+      });
+  };
   return (
     <div className="bg-white h-fit py-4">
       <Navbar></Navbar>
       <div className="md:max-w-lg mx-auto items-center flex flex-col mb-10">
-        <form className="space-y-12 border p-8 w-full rounded-md mt-10">
+        <form
+          onSubmit={handleCreateUser}
+          className="space-y-12 border p-8 w-full rounded-md mt-10"
+        >
           <h3 className="text-2xl text-black font-bold mb-12">
             Create an account
           </h3>
@@ -46,6 +68,7 @@ const Register = () => {
           <div className="form-control">
             <input
               type="email"
+              name="email"
               placeholder="Username or Email"
               className="py-3 px-2 text-black placeholder-black font-medium bg-transparent border-b-2 border-[#C5C5C5] outline-none"
               required
@@ -54,6 +77,7 @@ const Register = () => {
           <div className="form-control">
             <input
               type="password"
+              name="password"
               placeholder="Passowrd"
               className="px-2 py-3 text-black placeholder-black font-medium bg-transparent border-b-2 border-[#C5C5C5] outline-none"
               required
