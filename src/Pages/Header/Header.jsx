@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="hero-content text-neutral-content">
+    <div className="text-neutral-content flex items-center">
       <div className="max-w-md">
         <h1 className="mb-5 text-8xl font-bebas">{`Cox's bazar`}</h1>
         <p className="mb-5">

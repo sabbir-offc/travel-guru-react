@@ -1,26 +1,60 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
+import lightlogo from "../../../public/images/Frame.png";
+import darklogo from "../../../public/images/logo.png";
 const Navbar = () => {
+  const location = useLocation();
   const navLinks = (
     <>
-      <li>
+      <li
+        className={
+          location.pathname === "/"
+            ? "text-white font-semibold"
+            : "text-black font-semibold"
+        }
+      >
         <NavLink to="/news">News</NavLink>
       </li>
-      <li>
+      <li
+        className={
+          location.pathname === "/"
+            ? "text-white font-semibold"
+            : "text-black font-semibold"
+        }
+      >
         <NavLink to="/destination">Destination</NavLink>
       </li>
-      <li>
+      <li
+        className={
+          location.pathname === "/"
+            ? "text-white font-semibold"
+            : "text-black font-semibold"
+        }
+      >
         <NavLink to="/blog">Blog</NavLink>
       </li>
 
-      <li>
+      <li
+        className={
+          location.pathname === "/"
+            ? "text-white font-semibold"
+            : "text-black font-semibold"
+        }
+      >
         <NavLink to="/contact">Contact</NavLink>
       </li>
-      <li>
+      <li
+        className={
+          location.pathname === "/"
+            ? "text-white font-semibold"
+            : "text-black font-semibold"
+        }
+      >
         <NavLink to="/login">Login</NavLink>
       </li>
     </>
   );
+
   return (
     <div className="navbar bg-transparent container mx-auto">
       <div className="navbar-start">
@@ -48,19 +82,23 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <img src="/public/images/logo.png" alt="" />
+        <Link to="/" className="cursor-pointer">
+          <img src={location.pathname === "/" ? darklogo : lightlogo} alt="" />
+        </Link>
       </div>
-      <div className="relative bg-white w-2/4 rounded outline outline-white bg-opacity-40">
-        <input
-          type="text"
-          placeholder="Search your Destination..."
-          className="py-3 pl-10 pr-5 focus:outline-none bg-transparent text-white placeholder-white font-medium"
-        />
+      {location.pathname === "/logo" && (
+        <div className="relative bg-white w-2/4 rounded outline outline-white bg-opacity-40">
+          <input
+            type="text"
+            placeholder="Search your Destination..."
+            className="py-3 pl-10 pr-5 focus:outline-none bg-transparent text-white placeholder-white font-medium"
+          />
 
-        <span className="absolute text-2xl left-2">
-          <FiSearch className="text-white"></FiSearch>
-        </span>
-      </div>
+          <span className="absolute text-2xl left-2">
+            <FiSearch className="text-white"></FiSearch>
+          </span>
+        </div>
+      )}
       <div className="navbar-end">
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-3">{navLinks}</ul>
